@@ -1,0 +1,6 @@
+<%- include('./partials/head') %>
+<h3><%= user.first_name %> <%= user.last_name %></h3>
+<h4>Mein Motto:</h4>
+<p><%= user.text %></p>
+<a href="mailto:<%=user.email%>">Schreibe mir!</a>
+<%- include('./partials/footer') %>

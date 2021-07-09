@@ -1,0 +1,12 @@
+<%- include('./partials/head') %>
+
+<ul>
+   <% data.forEach(element=> { %>
+   <li>
+      <%# console.log(element) %>
+      <a href="/users/<%= element.id %>"> <%= element.first_name %> </a>
+   </li>
+   <% }) %>
+</ul>
+
+<%- include('./partials/footer') %>
